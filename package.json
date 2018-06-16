@@ -1,0 +1,15 @@
+{
+  "name": "alpine-mongo-express",
+  "version": "1.0.0",
+  "description": "for skazuki/alpine-mongo-express",
+  "main": "index.js",
+  "scripts": {
+    "start": "mongo-express",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "S-Kazuki<contact@revoneo.com>",
+  "license": "ISC",
+  "dependencies": {
+    "mongo-express": "^0.47.0"
+  }
+}
