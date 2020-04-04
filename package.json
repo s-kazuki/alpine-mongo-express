@@ -1,6 +1,6 @@
 {
   "name": "alpine-mongo-express",
-  "version": "0.51.1",
+  "version": "0.54.0",
   "description": "for skazuki/alpine-mongo-express",
   "main": "index.js",
   "scripts": {
@@ -9,6 +9,6 @@
   "author": "S-Kazuki<contact@revoneo.com>",
   "license": "ISC",
   "dependencies": {
-    "mongo-express": "^0.51.1"
+    "mongo-express": "^0.54.0"
   }
 }
