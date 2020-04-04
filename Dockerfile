@@ -9,14 +9,14 @@ WORKDIR $APP_ROOT
 COPY package.json ${APP_ROOT}/
 COPY yarn.lock ${APP_ROOT}/
 
-RUN yarn install \
-\
-&& apk update \
-&& apk add tzdata \
+RUN apk update \
+&& apk add git tzdata \
 && TZ=${TZ:-Asia/Tokyo} \
 && cp /usr/share/zoneinfo/$TZ /etc/localtime \
 && echo $TZ> /etc/timezone \
 && apk del tzdata \
-&& rm -rf /var/cache/apk/*
+&& rm -rf /var/cache/apk/* \
+\
+&& yarn install
 
 CMD ["yarn", "start"]
